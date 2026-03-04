@@ -10,7 +10,7 @@ import (
 func main() { // needed as an entry point. Must be provided
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{
 		Level: slog.LevelInfo,
-	})) 
+	}))
 	slog.SetDefault(logger) // set gloabl logger
 
 	cfg := app.Config{Addr: ":8080"} // set Port of the server
